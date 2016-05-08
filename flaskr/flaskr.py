@@ -23,7 +23,7 @@ app.config.from_envvar('FLASKR_SETTINGS', silent= True)
 
 def connect_db():
     """ Connects to the specific database """
-    conn = mysql.connect( host="localhost", user="root", passwd="Lisa@007", db="flaskr")
+    conn = mysql.connect( host="localhost", user="root", passwd="", db="flaskr")
     return  conn
 
 @app.before_request
